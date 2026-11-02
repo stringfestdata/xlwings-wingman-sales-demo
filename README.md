@@ -14,7 +14,7 @@ Build a reusable sales summary from a prompt, then rerun the saved Python script
 3. Leave access set to **Edit workbook**. Paste `prompt.txt` into Wingman and submit it.
 4. Inspect the saved Python code in the editor. Verify the Sales Summary: East 34 units / $529; West 23 units / $342; grand total 57 units / $871.
 5. Change `Data!D2` from 10 to 11. Select **Refresh Sales Report** in the script dropdown and click Run. The new total should be 58 units / $883, with East at $541. This action runs the saved script without sending another chat prompt.
-6. To check new rows, enter `S013`, `South`, `Mug`, `2`, `20` in `Data!A14:E14` and rerun. With D2 still 11, expect 60 units / $923. Restore D2 to 10 and clear A14:E14 when finished, then rerun.
+6. To check new rows, select Data!E13 and press Tab to add a Table row, then enter `S013`, `South`, `Mug`, `2`, `20` in `Data!A14:E14` and rerun. With D2 still 11, expect 60 units / $923. Restore D2 to 10 and remove the added record using Home > Delete > Delete Table Rows when finished, then rerun.
 
 Keep headers unchanged and order rows contiguous. Confirm the Table name under Table Design. Add new orders inside the Table; if pasting below it does not expand it, use Table Design > Resize Table. The prompt and saved calculation in the walkthrough read the contiguous Data!A:E source range. The example uses whole-number units. A script-generated report is refreshed by running its script; changing an input does not by itself refresh written output values. AI output can vary, so check the code and totals you receive.
 
